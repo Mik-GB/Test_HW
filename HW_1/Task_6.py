@@ -13,9 +13,13 @@
 # tiket_numb = int(input())
 tiket_numb = 123456
 first_numb = tiket_numb // 100000 + tiket_numb // 10000 % 10 + tiket_numb // 1000 % 10
-print(f"Сумма первых трех цифр: {tiket_numb // 100000} + {tiket_numb // 10000 % 10 } + {tiket_numb // 1000 % 10} = {tiket_numb // 100000 + tiket_numb // 10000 % 10 + tiket_numb // 1000 % 10}")
+print(f"Сумма первых трех цифр: {tiket_numb // 100000} \
+    + {tiket_numb // 10000 % 10 } + {tiket_numb // 1000 % 10} \
+    = {tiket_numb // 100000 + tiket_numb // 10000 % 10 + tiket_numb // 1000 % 10}")
 second_numb = tiket_numb % 1000 // 100 + tiket_numb % 100 // 10 + tiket_numb % 10
-print(f"Сумма последних трех цифр: {tiket_numb % 1000 // 100} + {tiket_numb % 100 // 10 } + {tiket_numb % 10} = {tiket_numb % 1000 // 100 + tiket_numb % 100 // 10 + tiket_numb % 10}")
+print(f"Сумма последних трех цифр: {tiket_numb % 1000 // 100} \
+    + {tiket_numb % 100 // 10 } + {tiket_numb % 10} \
+    = {tiket_numb % 1000 // 100 + tiket_numb % 100 // 10 + tiket_numb % 10}")
 
 if first_numb == second_numb:
     print('У ВАС СЧАСТЛИВЫЙ БИЛЕТИК!!!')
