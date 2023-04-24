@@ -6,9 +6,12 @@
 # 2 2
 #     4 
 def summ(numb_a, numb_b):
-    if numb_a < 0:
-        numb_a = abs(numb_a)
-    if numb_b < 0:
-        numb_b = abs(numb_b)
-    return numb_a + numb_b
-print(summ(0, 0))   
+    numb_a = abs(numb_a)
+    numb_b = abs(numb_b)
+    if numb_a == 0:
+        return numb_b
+    if numb_b == 0:
+        return numb_a
+    else:
+        return summ(numb_a + 1, numb_b - 1)
+print(summ(-9, -9))   
